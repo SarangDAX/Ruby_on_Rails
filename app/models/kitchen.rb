@@ -1,0 +1,3 @@
+class Kitchen < AppplicationRecord
+end
+  
