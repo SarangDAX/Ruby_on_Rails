@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: sarang_database_dev
+  database: sarang_kitchen_dev
   pool: 5
   username: postgres
   password: PostgreSD@123
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: sarang_database_test
+  database: sarang_kitchen_test
   pool: 5
   username: postgres
   password: PostgreSD@123
 
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: sample_postgres_production
-#   pool: 5
-#   username: postgres
-#   password: PostgreSD@123
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: sarang_kitchen_prod
+  pool: 5
+  username: postgres
+  password: PostgreSD@123
