@@ -1,0 +1,3 @@
+# <! scope defines the model with we are working 
+# <! url -> it specifies where we are going to submit it 
+# <! local -> to post using standard http POST instead of AJAX !>

@@ -1,0 +1,27 @@
+<h1> KITCHEN ITEMS LISTING PAGE : </h1>
+
+<table>
+    <thead>
+        <tr>
+            <th> ITEM_NAME </th>
+            <th> DESCRIPTION </th>
+            <th> ACTIONS </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @items.each do |item| %>
+            <tr>
+                <td> <%= item.item_name %> </td>
+                <td> <%= item.item_desc %> </td>
+                <td> <button> <%= link_to 'Show', kitchen_path(item) %> </button> </td>
+                <td> <button> <%= link_to 'Edit', edit_kitchen_path(item) %> &ensp; </button> <br> </td>
+                <td> <button> <%= link_to 'Delete', kitchen_path(item), method: :delete, data: { "turbo-method": :delete } %> </button> </td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<br><br>
+
+<h3><button> <%= link_to 'ADD NEW ITEM', new_kitchen_path %> </button> </h3>
